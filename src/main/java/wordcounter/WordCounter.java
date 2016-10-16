@@ -12,7 +12,7 @@ import java.util.concurrent.ConcurrentHashMap;
  * Created by Sergiy on 16.10.2016.
  */
 public class WordCounter {
-    private static Map<String, Long> repository;
+    private static final Map<String, Long> repository;
 
     static {
         repository = new ConcurrentHashMap();
@@ -62,7 +62,7 @@ public class WordCounter {
     }
 
     private static class String implements Comparable<String>, Serializable {
-        private java.lang.String wrappedString;
+        private final java.lang.String wrappedString;
 
         public String(java.lang.String string) {
             this.wrappedString = string;

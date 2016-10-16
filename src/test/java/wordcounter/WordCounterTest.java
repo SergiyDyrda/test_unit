@@ -8,16 +8,16 @@ import wordcounter.exception.NotFoundException;
  * Created by Sergiy on 16.10.2016.
  */
 public class WordCounterTest {
-    private static String USER = "user";
-    private static String USER_IGNORE_CASE = "UsEr";
-    private static String USER_NOT_FOUND = USER + "!!!";
-    private static String ADMIN = "admin";
-    private static String ADMIN_IGNORE_CASE = "AdMiN";
+    private static final String USER = "user";
+    private static final String USER_IGNORE_CASE = "UsEr";
+    private static final String USER_NOT_FOUND = USER + "!!!";
+    private static final String ADMIN = "admin";
+    private static final String ADMIN_IGNORE_CASE = "AdMiN";
 
-    private WordCounter wordCounter = new WordCounter();
+    private final WordCounter wordCounter = new WordCounter();
 
     @Rule
-    public ExpectedException exception = ExpectedException.none();
+    public final ExpectedException exception = ExpectedException.none();
 
     @Before
     public void setUp() throws Exception {

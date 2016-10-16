@@ -11,14 +11,14 @@ import static org.junit.Assert.assertFalse;
  * Created by Sergiy on 16.10.2016.
  */
 public class FindOpponentTest {
-    private Player player1 = new Player("player1", 1.3);
-    private Player player2 = new Player("player2", 1.45);
-    private Player player3 = new Player("player3", 1.73);
-    private Player player4 = new Player("player4", 1.14);
-    private Player player5 = new Player("player5", 1.0);
-    private Player player6 = new Player("player6", 1.99);
+    private final Player player1 = new Player("player1", 1.3);
+    private final Player player2 = new Player("player2", 1.45);
+    private final Player player3 = new Player("player3", 1.73);
+    private final Player player4 = new Player("player4", 1.14);
+    private final Player player5 = new Player("player5", 1.0);
+    private final Player player6 = new Player("player6", 1.99);
 
-    private FindOpponent findOpponentService = new FindOpponent();
+    private final FindOpponent findOpponentService = new FindOpponent();
 
     @Before
     public void setUp() throws Exception {

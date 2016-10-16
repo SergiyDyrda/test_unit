@@ -38,8 +38,7 @@ public class Player {
 
         Player player = (Player) o;
 
-        if (Double.compare(player.rating, rating) != 0) return false;
-        return name.equals(player.name);
+        return Double.compare(player.rating, rating) == 0 && name.equals(player.name);
 
     }
 

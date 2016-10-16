@@ -11,7 +11,7 @@ import java.util.Set;
  * Created by Sergiy on 16.10.2016.
  */
 public class FindOpponent {
-    private Set<Player> players = new HashSet<>();
+    private final Set<Player> players = new HashSet<>();
 
     public void addAllPlayers(Player...playerSet) {
         players.addAll(Arrays.asList(playerSet));
